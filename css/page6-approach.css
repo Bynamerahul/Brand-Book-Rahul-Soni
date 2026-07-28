@@ -1,0 +1,71 @@
+/* PAGE 6: APPROACH */
+.approach-page {
+    background-color: var(--color-soft-beige);
+    color: var(--color-charcoal-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-lg) var(--container-padding);
+}
+
+.approach-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.approach-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-emerald);
+}
+
+.approach-header p {
+    color: var(--color-graphite-light);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.vertical-workflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;
+    position: relative;
+}
+
+/* Connecting Line */
+.vertical-workflow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-emerald), transparent);
+    z-index: 1;
+}
+
+.workflow-step {
+    background: var(--color-white);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 176, 122, 0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+    font-family: var(--font-ui);
+    font-weight: 600;
+    color: var(--color-charcoal-black);
+    z-index: 2;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+}
+
+.workflow-step:hover {
+    background: var(--color-emerald);
+    color: var(--color-white);
+    transform: scale(1.05);
+}

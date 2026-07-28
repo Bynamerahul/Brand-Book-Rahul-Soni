@@ -1,0 +1,71 @@
+/* PAGE 8: LEADERSHIP */
+.leadership-page {
+    background-color: var(--color-charcoal-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg) var(--container-padding);
+}
+
+.leadership-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.leadership-header h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    color: var(--color-warm-orange);
+}
+
+.leadership-diagram {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leadership-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: var(--spacing-md);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.leadership-card:hover {
+    background: rgba(255, 107, 53, 0.1);
+    border-color: var(--color-warm-orange);
+}
+
+.leadership-card h3 {
+    font-family: var(--font-editorial);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.leadership-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+.leadership-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--color-warm-orange);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    border-radius: 20px 20px 0 0;
+}
+
+.leadership-card:hover::after {
+    transform: scaleX(1);
+}
