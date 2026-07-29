@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-ui);
+    color: var(--color-text-primary);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-editorial);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.125rem;
+}
+
+/* Page Section Container */
+.brand-book-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* BUTTER-SMOOTH APPLE REVEAL TRANSITION ON PAGE SECTIONS */
+.page-section {
+    width: 100vw;
+    min-height: 100vh;
+    padding: var(--container-padding);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    opacity: 0.4;
+    transform: scale(0.97);
+    transition: transform 1.1s cubic-bezier(0.2, 1, 0.25, 1), 
+                opacity 1.1s cubic-bezier(0.2, 1, 0.25, 1);
+    will-change: transform, opacity;
+}
+
+/* Active Visible Page Section (Full Scale) */
+.page-section.is-visible {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+/* DYNAMIC INTERACTIVE PAGE CANVAS BACKGROUNDS */
+.page-bg-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.65;
+}
+
+/* CUSTOM GLOBAL INTERACTIVE CURSOR */
+#global-custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-emerald);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 0 12px var(--color-emerald);
+}
+
+#global-cursor-aura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(0, 176, 122, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.18s ease-out, width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover State on Interactive Cursor */
+body.hovering-interactive #global-custom-cursor {
+    width: 22px;
+    height: 22px;
+    background-color: var(--color-electric-blue);
+    box-shadow: 0 0 20px var(--color-electric-blue);
+}
+
+body.hovering-interactive #global-cursor-aura {
+    width: 54px;
+    height: 54px;
+    border-color: rgba(0, 85, 255, 0.6);
+}
+
+/* SCROLL REVEAL ANIMATIONS ACROSS ALL PAGES */
+.reveal-up {
+    opacity: 0.3;
+    transform: translateY(25px);
+    transition: opacity 0.9s cubic-bezier(0.2, 1, 0.25, 1), transform 0.9s cubic-bezier(0.2, 1, 0.25, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-left {
+    opacity: 0.3;
+    transform: translateX(-25px);
+    transition: opacity 0.9s cubic-bezier(0.2, 1, 0.25, 1), transform 0.9s cubic-bezier(0.2, 1, 0.25, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-right {
+    opacity: 0.3;
+    transform: translateX(25px);
+    transition: opacity 0.9s cubic-bezier(0.2, 1, 0.25, 1), transform 0.9s cubic-bezier(0.2, 1, 0.25, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-scale {
+    opacity: 0.3;
+    transform: scale(0.96);
+    transition: opacity 0.9s cubic-bezier(0.2, 1, 0.25, 1), transform 0.9s cubic-bezier(0.2, 1, 0.25, 1);
+    will-change: opacity, transform;
+}
+
+/* Active Visible Trigger */
+.is-visible .reveal-up,
+.is-visible .reveal-left,
+.is-visible .reveal-right,
+.is-visible .reveal-scale,
+.is-visible.reveal-up,
+.is-visible.reveal-left,
+.is-visible.reveal-right,
+.is-visible.reveal-scale {
+    opacity: 1 !important;
+    transform: translate(0, 0) scale(1) !important;
+}
+
+/* Staggered Delay Utilities */
+.is-visible .delay-1 { transition-delay: 0.08s; }
+.is-visible .delay-2 { transition-delay: 0.16s; }
+.is-visible .delay-3 { transition-delay: 0.24s; }
+.is-visible .delay-4 { transition-delay: 0.32s; }
+.is-visible .delay-5 { transition-delay: 0.40s; }
+
+/* Utility Classes */
+.editorial-text {
+    font-family: var(--font-editorial);
+}
+
+.ui-text {
+    font-family: var(--font-ui);
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+}
+
+.dark-theme {
+    background-color: var(--color-charcoal-black);
+    color: var(--color-text-inverse);
+}
+
+.dark-theme .glass-panel {
+    background: rgba(17, 17, 17, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Global Responsive Adjustments */
+@media (max-width: 900px) {
+    #global-custom-cursor, #global-cursor-aura {
+        display: none !important;
+    }
+    .profile-page {
+        grid-template-columns: 1fr !important;
+    }
+    .philosophy-page {
+        grid-template-columns: 1fr !important;
+    }
+    .listing-comparison {
+        grid-template-columns: 1fr !important;
+    }
+    .case-transform {
+        flex-direction: column !important;
+    }
+    .leadership-diagram {
+        grid-template-columns: 1fr !important;
+    }
+    .report-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .report-widget {
+        grid-column: span 1 !important;
+    }
+}

@@ -1,0 +1,654 @@
+/* CONSOLIDATED PAGES (11-15) STYLES */
+
+/* PAGE 11: MARKETPLACE ECOSYSTEM & OPERATIONS */
+.eco-page-11 {
+    background-color: var(--color-charcoal-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4vw;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.eco-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.eco-header h2 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: var(--color-white);
+    font-family: var(--font-editorial);
+}
+
+.eco-header p {
+    color: var(--color-emerald);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+.eco-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.eco-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+
+.eco-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.eco-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.eco-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.eco-card-icon.ebay { background: rgba(0, 85, 255, 0.15); color: var(--color-electric-blue); }
+.eco-card-icon.etsy { background: rgba(255, 107, 53, 0.15); color: var(--color-warm-orange); }
+.eco-card-icon.shopify { background: rgba(0, 176, 122, 0.15); color: var(--color-emerald); }
+.eco-card-icon.ops { background: rgba(139, 121, 210, 0.15); color: var(--color-muted-purple); }
+
+.eco-card h3 {
+    font-family: var(--font-ui);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.eco-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.eco-item-pill {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.825rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.eco-item-pill svg {
+    color: var(--color-emerald);
+    flex-shrink: 0;
+}
+
+/* PAGE 12: LISTING OPTIMIZATION, AI & SEO */
+.page-12-container {
+    background-color: var(--color-soft-beige);
+    color: var(--color-charcoal-black);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4vw;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.page-12-header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.page-12-header h2 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: var(--color-charcoal-black);
+    font-family: var(--font-editorial);
+}
+
+.page-12-header p {
+    color: var(--color-electric-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+.page-12-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 1.25rem;
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.p12-box {
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.p12-box h3 {
+    font-size: 1.1rem;
+    font-family: var(--font-ui);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Before vs After Card */
+.listing-compare-card {
+    background: var(--color-soft-beige);
+    border-radius: 12px;
+    padding: 0.85rem;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid #cc0000;
+}
+
+.listing-compare-card.after {
+    background: rgba(0, 176, 122, 0.08);
+    border-left-color: var(--color-emerald);
+}
+
+.listing-compare-card h4 {
+    font-size: 0.9rem;
+    font-family: var(--font-ui);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.listing-compare-card p {
+    font-size: 0.8rem;
+    color: var(--color-graphite-light);
+    line-height: 1.4;
+}
+
+/* AI Workflow Timeline */
+.ai-steps-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ai-flow-step {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--color-soft-beige);
+    padding: 0.5rem 0.85rem;
+    border-radius: 10px;
+    font-size: 0.825rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.ai-flow-step:hover {
+    background: var(--color-electric-blue);
+    color: var(--color-white);
+    transform: translateX(4px);
+}
+
+.ai-step-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--color-white);
+    color: var(--color-charcoal-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* SEO Pyramid */
+.seo-pyramid-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.seo-stack-tier {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.825rem;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.seo-stack-tier.top {
+    background: var(--color-electric-blue);
+    color: var(--color-white);
+}
+
+.seo-stack-tier.mid {
+    background: rgba(0, 85, 255, 0.15);
+    color: var(--color-electric-blue);
+}
+
+.seo-stack-tier.base {
+    background: var(--color-soft-beige);
+    color: var(--color-graphite);
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* PAGE 13: PERFORMANCE MARKETING & CRM */
+.page-13-container {
+    background-color: var(--color-graphite);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4vw;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.page-13-header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.page-13-header h2 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: var(--color-soft-beige);
+    font-family: var(--font-editorial);
+}
+
+.page-13-header p {
+    color: var(--color-warm-orange);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+.p13-dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.p13-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 1.25rem;
+    backdrop-filter: blur(10px);
+}
+
+.p13-card h3 {
+    font-family: var(--font-ui);
+    font-size: 1.15rem;
+    color: var(--color-warm-orange);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.marketing-metrics-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.m-metric-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 0.85rem;
+    text-align: center;
+}
+
+.m-metric-box .m-val {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 0.2rem;
+}
+
+.m-metric-box .m-lbl {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+/* CRM Buyer Journey */
+.crm-journey-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.crm-journey-node {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border-left: 3px solid var(--color-emerald);
+}
+
+.crm-journey-node h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.crm-journey-node p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.p13-statement-banner {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(0, 85, 255, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    max-width: 1300px;
+    margin: 1rem auto 0;
+    width: 100%;
+}
+
+.p13-statement-banner p {
+    font-family: var(--font-editorial);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-style: italic;
+    color: var(--color-white);
+}
+
+/* PAGE 14: CASE STUDIES & GROWTH FRAMEWORK */
+.page-14-container {
+    background-color: var(--color-white);
+    color: var(--color-charcoal-black);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4vw;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.page-14-header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.page-14-header h2 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: var(--color-charcoal-black);
+    font-family: var(--font-editorial);
+}
+
+.page-14-header p {
+    color: var(--color-emerald);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+.p14-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.p14-card {
+    background: var(--color-soft-beige);
+    border-radius: 20px;
+    padding: 1.25rem;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p14-card h3 {
+    font-family: var(--font-ui);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-charcoal-black);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.framework-steps-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.fw-step-item {
+    background: var(--color-white);
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-graphite);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.fw-step-item span {
+    color: var(--color-emerald);
+    font-weight: 700;
+}
+
+/* PAGE 15: EXECUTIVE SUMMARY, TIMELINE & CONTACT */
+.page-15-container {
+    background-color: var(--color-charcoal-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4vw;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.page-15-header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.page-15-header h2 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: var(--color-white);
+    font-family: var(--font-editorial);
+}
+
+.page-15-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.p15-col {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p15-col h3 {
+    font-family: var(--font-ui);
+    font-size: 1.1rem;
+    color: var(--color-emerald);
+    margin-bottom: 1rem;
+}
+
+.p15-profile-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.p15-profile-badge img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 2px solid var(--color-warm-orange);
+}
+
+.p15-profile-badge div h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.p15-profile-badge div p {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.p15-quote-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.p15-quote-item {
+    font-family: var(--font-editorial);
+    font-size: 0.85rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+    border-left: 2px solid var(--color-emerald);
+    padding-left: 0.6rem;
+}
+
+.p15-timeline-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.p15-timeline-node {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.6rem 0.85rem;
+    border-radius: 10px;
+    border-left: 3px solid var(--color-electric-blue);
+}
+
+.p15-timeline-node h5 {
+    font-size: 0.85rem;
+    color: var(--color-white);
+}
+
+.p15-timeline-node p {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.p15-contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.p15-contact-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.p15-final-quote {
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.p15-final-quote h3 {
+    font-family: var(--font-editorial);
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    color: var(--color-white);
+    line-height: 1.3;
+}
+
+.p15-final-quote p {
+    color: var(--color-emerald);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    font-weight: 600;
+}
+
+/* RESPONSIVE ADJUSTMENTS FOR CONSOLIDATED PAGES */
+@media (max-width: 1024px) {
+    .page-12-grid {
+        grid-template-columns: 1fr;
+    }
+    .p13-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    .p14-grid {
+        grid-template-columns: 1fr;
+    }
+    .page-15-grid {
+        grid-template-columns: 1fr;
+    }
+}
