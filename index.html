@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Soni | Executive Personal Brand Book</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rahul Soni is a Business Operations & Marketplace Growth Specialist helping e-commerce brands operate smarter, sell better and scale faster.">
+    
+    <!-- Google Fonts: Inter for UI/Body, Playfair Display for Editorial Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/page1-cover.css">
+    <link rel="stylesheet" href="css/page2-profile.css">
+    <link rel="stylesheet" href="css/page3-journey.css">
+    <link rel="stylesheet" href="css/page4-philosophy.css">
+    <link rel="stylesheet" href="css/page5-mindset.css">
+    <link rel="stylesheet" href="css/page6-approach.css">
+    <link rel="stylesheet" href="css/page7-responsibilities.css">
+    <link rel="stylesheet" href="css/page8-leadership.css">
+    <link rel="stylesheet" href="css/page9-strengths.css">
+    <link rel="stylesheet" href="css/page10-why-hire.css">
+    <link rel="stylesheet" href="css/consolidated-pages.css">
+</head>
+<body>
+    <!-- Global Custom Interactive Cursor & Aura -->
+    <div id="global-custom-cursor"></div>
+    <div id="global-cursor-aura"></div>
+
+    <!-- Main scrollable container -->
+    <main class="brand-book-container">
+        
+        <!-- PAGE 1: COVER (DRIBBBLE-STYLE LANDING HERO) -->
+        <section class="page-section cover-page" id="page-1">
+            <div class="cover-mesh-bg"></div>
+            <div class="cover-grid-overlay"></div>
+            <canvas id="cover-hero-canvas"></canvas>
+
+            <div class="cover-content">
+                <!-- Top Status Badge -->
+                <div class="hero-status-pill">
+                    <span class="pulse-dot"></span>
+                    Executive Personal Brand Book • E-Commerce Growth
+                </div>
+
+                <div class="cover-header">
+                    <h1 class="headline">Rahul Soni</h1>
+                    <h2 class="subtitle">Business Operations & Marketplace Growth Specialist</h2>
+                </div>
+                
+                <!-- Central Interactive Feature Stage (3-Column Grid Layout: Zero Overlaps) -->
+                <div class="hero-stage-container" id="hero-stage">
+                    <!-- Left Column Badges -->
+                    <div class="hero-column">
+                        <div class="hero-feature-card">
+                            <div class="badge-icon ebay">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                            </div>
+                            <div class="badge-text">
+                                <span class="title">eBay & Etsy Operations</span>
+                                <span class="sub">99.8% Store Health • Cassini SEO</span>
+                            </div>
+                        </div>
+                        <div class="hero-feature-card">
+                            <div class="badge-icon ai">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <div class="badge-text">
+                                <span class="title">AI Growth Pipeline</span>
+                                <span class="sub">Perplexity + Midjourney AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center Column Command Card -->
+                    <div class="hero-portrait-card" id="portrait-card">
+                        <div class="hero-dashboard-graphic">
+                            <div class="dash-graphic-header">
+                                <span class="dash-dot red"></span>
+                                <span class="dash-dot yellow"></span>
+                                <span class="dash-dot green"></span>
+                                <span class="dash-title">ECOMMERCE COMMAND CENTER</span>
+                            </div>
+                            <div class="dash-graphic-body">
+                                <div class="dash-stat-row">
+                                    <div class="dash-kpi">
+                                        <span class="kpi-label">STORE HEALTH</span>
+                                        <span class="kpi-val emerald">99.8%</span>
+                                    </div>
+                                    <div class="dash-kpi">
+                                        <span class="kpi-label">ORGANIC CTR</span>
+                                        <span class="kpi-val">+4.5%</span>
+                                    </div>
+                                </div>
+                                <svg class="dash-chart-svg" viewBox="0 0 300 100">
+                                    <defs>
+                                        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#00b07a" stop-opacity="0.5"/>
+                                            <stop offset="100%" stop-color="#00b07a" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M 0 80 Q 60 70 120 30 T 240 15 T 300 5" fill="none" stroke="#00b07a" stroke-width="3"/>
+                                    <path d="M 0 80 Q 60 70 120 30 T 240 15 T 300 5 L 300 100 L 0 100 Z" fill="url(#chartGrad)"/>
+                                </svg>
+                                <div class="dash-footer-pills">
+                                    <span>eBay Active</span>
+                                    <span>Etsy Synced</span>
+                                    <span>Shopify Live</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column Badges -->
+                    <div class="hero-column">
+                        <div class="hero-feature-card">
+                            <div class="badge-icon shopify">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                            </div>
+                            <div class="badge-text">
+                                <span class="title">Shopify Platform</span>
+                                <span class="sub">+4.5% CTR • Mobile UX</span>
+                            </div>
+                        </div>
+                        <div class="hero-feature-card">
+                            <div class="badge-icon ops">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+                            </div>
+                            <div class="badge-text">
+                                <span class="title">Logistics & Global CRM</span>
+                                <span class="sub">Inventory Sync • Int'l Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cover-footer">
+                    <p class="tagline">
+                        Helping e-commerce brands operate smarter, sell better and scale faster through marketplace expertise, customer relationships, AI-enabled workflows and business operations.
+                    </p>
+                    <div class="skills-list">
+                        <span class="skill-tag">eBay</span>
+                        <span class="skill-tag">Etsy</span>
+                        <span class="skill-tag">Shopify</span>
+                        <span class="skill-tag">Business Operations</span>
+                        <span class="skill-tag">Marketplace Growth</span>
+                        <span class="skill-tag">Customer Success</span>
+                        <span class="skill-tag">AI Enabled Marketing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to discover</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: WHO IS RAHUL -->
+        <section class="page-section profile-page" id="page-2">
+            <canvas id="canvas-page-2" class="page-bg-canvas"></canvas>
+            <div class="profile-content">
+                <span class="section-title">Who is Rahul</span>
+                <h2 class="main-quote editorial-text">
+                    "I don't just see a storefront. I see an interconnected system of operations, customer psychology, and scalable growth."
+                </h2>
+                
+                <div class="profile-text-grid">
+                    <div class="profile-card">
+                        <div class="icon-wrapper">
+                            <!-- SVG Icon for Systems -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18m-9-9h18M5 5l14 14M19 5L5 19"/></svg>
+                        </div>
+                        <h3>Ownership Mindset</h3>
+                        <p>Approaching every business problem as if the company was my own. It's never just 'a task', it's about the bottom line.</p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="icon-wrapper">
+                            <!-- SVG Icon for Creativity -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>Creative Systems</h3>
+                        <p>Combining creative design intuition with rigorous operational systems to build experiences that both look beautiful and convert.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-snippet">
+                    <p>Driven by a deep curiosity for how e-commerce ecosystems function—from the first impression on a marketplace listing to the final delivery and customer retention.</p>
+                </div>
+            </div>
+
+            <div class="profile-visuals">
+                <div class="abstract-bg"></div>
+                <img src="assets/images/rahul-photo.jpg" alt="Rahul Soni" class="portrait-small">
+            </div>
+        </section>
+
+        <!-- PAGE 3: MY PROFESSIONAL JOURNEY -->
+        <section class="page-section journey-page" id="page-3">
+            <canvas id="canvas-page-3" class="page-bg-canvas"></canvas>
+            <svg class="timeline-bg-lines" viewBox="0 0 1200 400" preserveAspectRatio="none">
+                <path d="M 0 200 Q 300 0 600 200 T 1200 200" />
+            </svg>
+
+            <div class="journey-header">
+                <h2>My Professional Journey</h2>
+                <p>Evolution of a Growth Specialist</p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-node"><div class="node-dot"></div>Content Creation</div>
+                <div class="timeline-node"><div class="node-dot"></div>Photography & Video Editing</div>
+                <div class="timeline-node"><div class="node-dot"></div>Graphic Design</div>
+                <div class="timeline-node"><div class="node-dot"></div>Social Media & Marketing</div>
+                <div class="timeline-node"><div class="node-dot"></div>Customer Communication</div>
+                <div class="timeline-node"><div class="node-dot"></div>Marketplace Management</div>
+                <div class="timeline-node"><div class="node-dot"></div>Shopify, eBay & Etsy</div>
+                <div class="timeline-node"><div class="node-dot"></div>SEO & Google Ads</div>
+                <div class="timeline-node"><div class="node-dot"></div>AI Integrations</div>
+                <div class="timeline-node" style="font-weight:700; border-color:var(--color-electric-blue);"><div class="node-dot"></div>Business Operations & Leadership</div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: MY PROFESSIONAL PHILOSOPHY -->
+        <section class="page-section philosophy-page" id="page-4">
+            <canvas id="canvas-page-4" class="page-bg-canvas"></canvas>
+            <div class="philosophy-image-container">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop" alt="Minimalist Office Workspace" />
+            </div>
+            
+            <div class="philosophy-content">
+                <span class="section-label">Professional Philosophy</span>
+                <div class="philosophy-pull-quote">
+                    Execution is significantly more valuable than ideas.
+                </div>
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-item">
+                        <h3>Operations Matter</h3>
+                        <p>A beautiful store without reliable fulfillment, robust inventory management, and clear communication is just a painting. Operations turn it into a business.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>Customer Trust</h3>
+                        <p>Customer trust is the ultimate marketing strategy. Solving problems proactively creates lifetime value far beyond a single transaction.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>Marketplace Systems</h3>
+                        <p>Marketplaces aren't just selling channels; they are algorithms requiring calculated SEO, structured data, and rigorous compliance to thrive.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>AI as an Assistant</h3>
+                        <p>AI doesn't replace the operator. It accelerates workflows, analyzes massive datasets, and frees up human capital for high-level strategic decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: HOW I THINK ABOUT BUSINESS -->
+        <section class="page-section mindset-page" id="page-5">
+            <canvas id="canvas-page-5" class="page-bg-canvas"></canvas>
+            <div class="mindset-header">
+                <h2>How I Think About Business</h2>
+                <p>The Strategic Mindset</p>
+            </div>
+            
+            <div class="mindset-diagram">
+                <div class="mindset-card core-node">
+                    <h3>Continuous Improvement</h3>
+                    <p>The cycle never ends. Measure, optimize, execute, repeat.</p>
+                </div>
+                
+                <div class="mindset-card">
+                    <div class="mindset-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Business First</h3>
+                    <p>Every design, ad, or process must directly contribute to revenue, margin, or brand equity.</p>
+                </div>
+
+                <div class="mindset-card">
+                    <div class="mindset-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <h3>Customer First</h3>
+                    <p>Frictionless buying experiences and immediate support build a moat around your brand.</p>
+                </div>
+
+                <div class="mindset-card">
+                    <div class="mindset-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </div>
+                    <h3>Systems First</h3>
+                    <p>Rely on robust processes, automation, and standard operating procedures rather than individual willpower.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 6: MY BUSINESS APPROACH -->
+        <section class="page-section approach-page" id="page-6">
+            <canvas id="canvas-page-6" class="page-bg-canvas"></canvas>
+            <div class="approach-header">
+                <h2>My Business Approach</h2>
+                <p>The Vertical Workflow</p>
+            </div>
+            
+            <div class="vertical-workflow">
+                <div class="workflow-step">Business Audit</div>
+                <div class="workflow-step">Product Understanding</div>
+                <div class="workflow-step">Competitor Analysis</div>
+                <div class="workflow-step">Marketplace Analysis</div>
+                <div class="workflow-step">Customer Analysis</div>
+                <div class="workflow-step">SEO & Content</div>
+                <div class="workflow-step">Pricing & Advertising</div>
+                <div class="workflow-step">Customer Communication</div>
+                <div class="workflow-step">Reporting</div>
+                <div class="workflow-step" style="background:var(--color-emerald); color:white;">Continuous Improvement</div>
+            </div>
+        </section>
+
+        <!-- PAGE 7: WHAT I ACTUALLY DO -->
+        <section class="page-section responsibilities-page" id="page-7">
+            <canvas id="canvas-page-7" class="page-bg-canvas"></canvas>
+            <div class="resp-header">
+                <h2>What I Actually Do</h2>
+                <p>Interconnected Business Operations</p>
+            </div>
+            
+            <div class="resp-network">
+                <div class="resp-pill core">Brand Growth</div>
+                <div class="resp-pill">Marketplace Operations</div>
+                <div class="resp-pill">Customer Communication</div>
+                <div class="resp-pill">International Buyers</div>
+                <div class="resp-pill">Product Listings</div>
+                <div class="resp-pill core">Business Development</div>
+                <div class="resp-pill">SEO Optimisation</div>
+                <div class="resp-pill">Advertising</div>
+                <div class="resp-pill">Website Management</div>
+                <div class="resp-pill core">Team Coordination</div>
+                <div class="resp-pill">Reporting & Analytics</div>
+                <div class="resp-pill">AI Assisted Workflows</div>
+            </div>
+        </section>
+
+        <!-- PAGE 8: TEAM MANAGEMENT & LEADERSHIP -->
+        <section class="page-section leadership-page" id="page-8">
+            <canvas id="canvas-page-8" class="page-bg-canvas"></canvas>
+            <div class="leadership-header">
+                <h2>Team Management & Leadership</h2>
+            </div>
+            
+            <div class="leadership-diagram">
+                <div class="leadership-card">
+                    <h3>Cross-Functional Coordination</h3>
+                    <p>Aligning marketing, customer service, and operations to ensure a cohesive strategy. Silos destroy margins; unified teams drive growth.</p>
+                </div>
+                <div class="leadership-card">
+                    <h3>Decision Making</h3>
+                    <p>Making data-driven decisions under pressure. Evaluating risks, market trends, and immediate operational needs to pivot effectively.</p>
+                </div>
+                <div class="leadership-card">
+                    <h3>Delegation & Follow-up</h3>
+                    <p>Trusting specialists to execute while maintaining rigorous accountability loops. Delegation without follow-up is abdication.</p>
+                </div>
+                <div class="leadership-card">
+                    <h3>Conflict Resolution</h3>
+                    <p>Navigating internal friction and external vendor issues with a calm, business-first methodology to reach win-win outcomes.</p>
+                </div>
+                <div class="leadership-card">
+                    <h3>Ownership</h3>
+                    <p>Taking ultimate responsibility for outcomes. When a process breaks, identifying the root cause and building a system to prevent recurrence.</p>
+                </div>
+                <div class="leadership-card" style="border-color: var(--color-warm-orange); background: rgba(255, 107, 53, 0.05);">
+                    <h3>Solving Operational Issues</h3>
+                    <p>Stepping into the trenches when necessary to clear bottlenecks and streamline delivery, ensuring the customer never feels internal friction.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 9: CORE STRENGTHS -->
+        <section class="page-section strengths-page" id="page-9">
+            <canvas id="canvas-page-9" class="page-bg-canvas"></canvas>
+            <div class="strengths-header">
+                <h2>Core Strengths</h2>
+            </div>
+            
+            <div class="strengths-grid">
+                <div class="strength-category">
+                    <h3>Operations & Strategy</h3>
+                    <div class="strength-items">
+                        <div class="strength-item">
+                            <span class="strength-name">Business Operations</span>
+                            <span class="strength-level level-expert">Expert</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Business Development</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Analytics & Reporting</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strength-category">
+                    <h3>Marketplace Growth</h3>
+                    <div class="strength-items">
+                        <div class="strength-item">
+                            <span class="strength-name">Marketplace Management</span>
+                            <span class="strength-level level-expert">Expert</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">eBay Operations</span>
+                            <span class="strength-level level-expert">Expert</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Etsy Operations</span>
+                            <span class="strength-level level-expert">Expert</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Shopify Management</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strength-category">
+                    <h3>Marketing & Acquisition</h3>
+                    <div class="strength-items">
+                        <div class="strength-item">
+                            <span class="strength-name">Customer Relationship</span>
+                            <span class="strength-level level-expert">Expert</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">SEO Strategy</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Google Ads</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Meta Ads</span>
+                            <span class="strength-level level-intermediate">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strength-category">
+                    <h3>Creative & Tech</h3>
+                    <div class="strength-items">
+                        <div class="strength-item">
+                            <span class="strength-name">AI Workflows</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Photography & Video</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                        <div class="strength-item">
+                            <span class="strength-name">Graphic Design & UI/UX</span>
+                            <span class="strength-level level-advanced">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 10: WHY BUSINESSES HIRE RAHUL -->
+        <section class="page-section why-hire-page" id="page-10">
+            <div class="why-hire-grid-bg"></div>
+            <div class="mouse-spotlight" id="spotlight-page10"></div>
+            <canvas id="cursor-canvas-page10"></canvas>
+            
+            <div class="why-hire-content">
+                <div class="why-hire-header">The Paradigm Shift</div>
+                
+                <div class="value-statement">
+                    <span>✓</span>
+                    <h3>I don't only optimise listings.<br>I optimise business operations.</h3>
+                </div>
+                <div class="value-statement">
+                    <span>✓</span>
+                    <h3>I don't only run ads.<br>I improve customer acquisition systems.</h3>
+                </div>
+                <div class="value-statement">
+                    <span>✓</span>
+                    <h3>I don't only build Shopify stores.<br>I engineer the buying experience.</h3>
+                </div>
+                <div class="value-statement">
+                    <span>✓</span>
+                    <h3>I don't only communicate with customers.<br>I build long-term brand trust.</h3>
+                </div>
+                <div class="value-statement">
+                    <span>✓</span>
+                    <h3>I don't only use AI.<br>I leverage AI to multiply business efficiency.</h3>
+                </div>
+
+                <div class="bold-conclusion">
+                    "I don't work on isolated tasks.<br>I help businesses build systems that scale."
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 11: MARKETPLACE ECOSYSTEM & OPERATIONS -->
+        <section class="page-section eco-page-11" id="page-11">
+            <canvas id="canvas-page-11" class="page-bg-canvas"></canvas>
+            <div class="eco-header">
+                <h2>Multi-Channel Marketplace Operations</h2>
+                <p>eBay • Etsy • Shopify • Global Supply Systems</p>
+            </div>
+
+            <div class="eco-grid-container">
+                <!-- eBay Operations -->
+                <div class="eco-card">
+                    <div class="eco-card-header">
+                        <div class="eco-card-icon ebay">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </div>
+                        <h3>eBay Ecosystem</h3>
+                    </div>
+                    <div class="eco-card-body">
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Seller Hub & Terapeak Market Research
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Cassini SEO Titles & Item Specifics
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Promoted Listings & Markdown Campaigns
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Top-Rated Seller Standard & Global Shipping
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etsy Ecosystem -->
+                <div class="eco-card">
+                    <div class="eco-card-header">
+                        <div class="eco-card-icon etsy">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                        </div>
+                        <h3>Etsy Ecosystem</h3>
+                    </div>
+                    <div class="eco-card-body">
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Handmade & Vintage Tag Optimization
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Visual Merchandising & Lifestyle Aesthetics
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            5-Star Review Engines & Shop Stories
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Physical & Digital Product Sales Events
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shopify Operations -->
+                <div class="eco-card">
+                    <div class="eco-card-header">
+                        <div class="eco-card-icon shopify">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3>Shopify Platform</h3>
+                    </div>
+                    <div class="eco-card-body">
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Frictionless Checkout & Mobile UX
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            App Integrations & Conversion Architecture
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Navigational UX & Trust Building Badges
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Integrated Google Analytics (GA4) Funnels
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Operations -->
+                <div class="eco-card">
+                    <div class="eco-card-header">
+                        <div class="eco-card-icon ops">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Operations & Logistics</h3>
+                    </div>
+                    <div class="eco-card-body">
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Multi-Location Inventory Syncing
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Supplier & Warehouse Coordination
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Dispute & Return Resolution Protocols
+                        </div>
+                        <div class="eco-item-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Operational Bottleneck Elimination
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 12: LISTING ENGINE, AI & SEO STRATEGY -->
+        <section class="page-section page-12-container" id="page-12">
+            <canvas id="canvas-page-12" class="page-bg-canvas"></canvas>
+            <div class="page-12-header">
+                <h2>Listing Engine & AI Growth Pipeline</h2>
+                <p>Optimization • AI Acceleration • Organic Search Moat</p>
+            </div>
+
+            <div class="page-12-grid">
+                <!-- Box 1: Listing Before vs After -->
+                <div class="p12-box">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-emerald)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                        Listing Transformation
+                    </h3>
+                    <div class="listing-compare-card">
+                        <h4 style="color:#cc0000;">Original Listing</h4>
+                        <p>Generic Title, unedited stock imagery, text blocks, zero algorithmic traction.</p>
+                    </div>
+                    <div class="listing-compare-card after">
+                        <h4 style="color:var(--color-emerald);">Engineered Listing</h4>
+                        <p>High-intent SEO Title, AI studio mockups, structured bullet points & conversion triggers.</p>
+                    </div>
+                    <div style="margin-top: auto; font-size: 0.75rem; color: var(--color-graphite-light); font-style: italic; text-align: center;">
+                        * Concept Demonstration
+                    </div>
+                </div>
+
+                <!-- Box 2: AI Pipeline -->
+                <div class="p12-box">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-electric-blue)" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        AI Acceleration Pipeline
+                    </h3>
+                    <div class="ai-steps-flow">
+                        <div class="ai-flow-step"><div class="ai-step-num">1</div> Market Research & Competitor Benchmarking</div>
+                        <div class="ai-flow-step"><div class="ai-step-num">2</div> High-Intent Keyword Discovery (Perplexity / AI)</div>
+                        <div class="ai-flow-step"><div class="ai-step-num">3</div> AI Copywriting & Benefit Structuring</div>
+                        <div class="ai-flow-step"><div class="ai-step-num">4</div> AI Background Removal & Image Upscaling</div>
+                        <div class="ai-flow-step"><div class="ai-step-num">5</div> Lifestyle Mockup & Infographic Creation</div>
+                        <div class="ai-flow-step"><div class="ai-step-num">6</div> Automated Publishing & Performance Review</div>
+                    </div>
+                </div>
+
+                <!-- Box 3: SEO Strategy Pyramid -->
+                <div class="p12-box">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-warm-orange)" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        Organic SEO Moat
+                    </h3>
+                    <div class="seo-pyramid-stack">
+                        <div class="seo-stack-tier top">Search Intent & CRO Optimization</div>
+                        <div class="seo-stack-tier mid">Marketplace Keyword Research</div>
+                        <div class="seo-stack-tier base">Technical SEO, Alt Text & Linking</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 13: PERFORMANCE MARKETING & GLOBAL CRM -->
+        <section class="page-section page-13-container" id="page-13">
+            <canvas id="canvas-page-13" class="page-bg-canvas"></canvas>
+            <div class="page-13-header">
+                <h2>Performance Marketing & Global CRM</h2>
+                <p>Acquisition Engine • International Buyer Experience</p>
+            </div>
+
+            <div class="p13-dashboard-grid">
+                <!-- Marketing Card -->
+                <div class="p13-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        Acquisition Engine Dashboard
+                    </h3>
+                    <div class="marketing-metrics-row">
+                        <div class="m-metric-box">
+                            <div class="m-val" style="color:var(--color-emerald);">Google Ads</div>
+                            <div class="m-lbl">Search & Shopping</div>
+                        </div>
+                        <div class="m-metric-box">
+                            <div class="m-val" style="color:var(--color-electric-blue);">Meta Ads</div>
+                            <div class="m-lbl">Retargeting</div>
+                        </div>
+                        <div class="m-metric-box">
+                            <div class="m-val" style="color:var(--color-warm-orange);">PMax</div>
+                            <div class="m-lbl">Audience Scale</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-top: 1rem; line-height: 1.5;">
+                        Operating ads with an operator's mindset: prioritizing profitable ROAS and low acquisition costs over vanity metrics.
+                    </p>
+                </div>
+
+                <!-- Global CRM Card -->
+                <div class="p13-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        4-Stage International Buyer Journey
+                    </h3>
+                    <div class="crm-journey-timeline">
+                        <div class="crm-journey-node">
+                            <div>
+                                <h4>1. Pre-Sale Trust</h4>
+                                <p>Prompt inquiry response & clear product clarity across international buyers.</p>
+                            </div>
+                        </div>
+                        <div class="crm-journey-node">
+                            <div>
+                                <h4>2. Order Fulfillment & Tracking</h4>
+                                <p>Proactive dispatch notifications & customs documentation support.</p>
+                            </div>
+                        </div>
+                        <div class="crm-journey-node">
+                            <div>
+                                <h4>3. Frictionless Resolution</h4>
+                                <p>Handling returns & refunds smoothly to preserve 100% feedback score.</p>
+                            </div>
+                        </div>
+                        <div class="crm-journey-node">
+                            <div>
+                                <h4>4. Retention & LTV</h4>
+                                <p>Turn first-time buyers into lifetime repeat clients through outstanding service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p13-statement-banner">
+                <p>"I don't perform isolated tasks. I operate interconnected business systems."</p>
+            </div>
+        </section>
+
+        <!-- PAGE 14: CASE STUDIES & BUSINESS GROWTH FRAMEWORK -->
+        <section class="page-section page-14-container" id="page-14">
+            <canvas id="canvas-page-14" class="page-bg-canvas"></canvas>
+            <div class="page-14-header">
+                <h2>Business Growth Framework & Case Studies</h2>
+                <p>Systemic Auditing • Execution • Continuous Improvement</p>
+            </div>
+
+            <div class="p14-grid">
+                <!-- Card 1: Case Study 01 -->
+                <div class="p14-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-emerald)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        Case Study 01: Listing Overhaul
+                    </h3>
+                    <p style="font-size:0.85rem; color:var(--color-graphite-light); margin-bottom:0.75rem;">
+                        Transformed underperforming product listings into high-converting marketplace assets through structured titles, AI studio images, and keyword enrichment.
+                    </p>
+                    <div style="background:var(--color-white); padding:0.75rem; border-radius:10px; font-size:0.8rem; border:1px solid rgba(0,0,0,0.05);">
+                        <strong style="color:var(--color-emerald);">Key Result:</strong> Organic search rank moved to Page 1 with +4.5% CTR lift (*Concept Demo).
+                    </div>
+                </div>
+
+                <!-- Card 2: 6-Step Growth Framework -->
+                <div class="p14-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-electric-blue)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        6-Step Growth Framework
+                    </h3>
+                    <div class="framework-steps-list">
+                        <div class="fw-step-item"><span>1.</span> Business Audit</div>
+                        <div class="fw-step-item"><span>2.</span> Market Audit</div>
+                        <div class="fw-step-item"><span>3.</span> SEO Overhaul</div>
+                        <div class="fw-step-item"><span>4.</span> Listing Optimization</div>
+                        <div class="fw-step-item"><span>5.</span> Ad Configuration</div>
+                        <div class="fw-step-item"><span>6.</span> Continuous CRO</div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Business Development -->
+                <div class="p14-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-warm-orange)" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+                        Business Development Pillars
+                    </h3>
+                    <p style="font-size:0.85rem; color:var(--color-graphite-light); margin-bottom:0.5rem;">
+                        Targeted Lead Generation, Cold Outreach, Strategic Relationship Building, Cross-selling, and International Expansion.
+                    </p>
+                </div>
+
+                <!-- Card 4: Reporting & KPI Analytics -->
+                <div class="p14-card">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-muted-purple)" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        Reporting & Analytics Engine
+                    </h3>
+                    <div style="display:flex; justify-content:space-between; align-items:center; background:var(--color-white); padding:0.75rem; border-radius:10px; border:1px solid rgba(0,0,0,0.05);">
+                        <div>
+                            <div style="font-size:0.75rem; color:var(--color-graphite-light);">Marketplace Health</div>
+                            <div style="font-size:1.1rem; font-weight:700; color:var(--color-emerald);">99.8% Rating</div>
+                        </div>
+                        <div>
+                            <div style="font-size:0.75rem; color:var(--color-graphite-light);">SEO Traffic</div>
+                            <div style="font-size:1.1rem; font-weight:700; color:var(--color-electric-blue);">+42% Growth</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 15: EXECUTIVE PROFILE, TIMELINE & CONTACT -->
+        <section class="page-section page-15-container" id="page-15">
+            <canvas id="canvas-page-15" class="page-bg-canvas"></canvas>
+            <div class="page-15-header">
+                <h2>Executive Profile & Engagement</h2>
+            </div>
+
+            <div class="page-15-grid">
+                <!-- Col 1: Photo & Work Philosophy -->
+                <div class="p15-col">
+                    <div class="p15-profile-badge">
+                        <img src="assets/images/rahul-photo.jpg" alt="Rahul Soni">
+                        <div>
+                            <h4>Rahul Soni</h4>
+                            <p>Business Operations Specialist</p>
+                        </div>
+                    </div>
+
+                    <div class="p15-quote-list">
+                        <div class="p15-quote-item">"Business grows through execution."</div>
+                        <div class="p15-quote-item">"Customer trust is the ultimate marketing strategy."</div>
+                        <div class="p15-quote-item">"Systems outperform shortcuts."</div>
+                        <div class="p15-quote-item">"AI amplifies human capability."</div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Career Timeline -->
+                <div class="p15-col">
+                    <h3>Professional Career Timeline</h3>
+                    <div class="p15-timeline-mini">
+                        <div class="p15-timeline-node">
+                            <h5>Present: Business Operations Specialist</h5>
+                            <p>Scaling marketplace ecosystems, supply operations, and AI workflows.</p>
+                        </div>
+                        <div class="p15-timeline-node">
+                            <h5>Marketplace Management & Customer Success</h5>
+                            <p>Led eBay & Etsy growth, international buyer support & SEO campaigns.</p>
+                        </div>
+                        <div class="p15-timeline-node">
+                            <h5>Content Creation & Digital Marketing</h5>
+                            <p>Created visual assets, photography, and conversion ads.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 3: Contact & Final Quote -->
+                <div class="p15-col">
+                    <h3>Direct Contact & Availability</h3>
+                    <div class="p15-contact-box">
+                        <div class="p15-contact-item">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-emerald)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            hello@rahulsoni.example
+                        </div>
+                        <div class="p15-contact-item">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-electric-blue)" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            linkedin.com/in/rahulsoni
+                        </div>
+                        <div class="p15-contact-item">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-warm-orange)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            rahulsoni.portfolio.example
+                        </div>
+                    </div>
+
+                    <div style="display:flex; gap:0.4rem; flex-wrap:wrap; font-size:0.75rem; color:rgba(255,255,255,0.7);">
+                        <span style="background:rgba(255,255,255,0.05); padding:0.25rem 0.5rem; border-radius:12px;">Open to Remote</span>
+                        <span style="background:rgba(255,255,255,0.05); padding:0.25rem 0.5rem; border-radius:12px;">Open to Hybrid</span>
+                        <span style="background:rgba(255,255,255,0.05); padding:0.25rem 0.5rem; border-radius:12px;">Relocation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p15-final-quote">
+                <h3>"I believe businesses grow when systems, people and execution work together."</h3>
+                <p>Let's build something meaningful.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
